@@ -1,0 +1,118 @@
+.navigation {
+  @include flex-center;
+  width: 100%;
+  &__container {
+    @include flex-center;
+    width: 100%;
+    max-width: 1220px;
+    position: relative;
+    padding: 25px 10px 95px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    & > a {
+      & > svg {
+        & > g > path {
+          transition: $animationStyle;
+        }
+        &:hover {
+          & > g > path {
+            stroke: $whiteColor;
+            &:first-of-type {
+              stroke: none;
+              fill: $whiteColor;
+            }
+            &:last-of-type {
+              fill: $whiteColor;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__menu-icon {
+    display: none;
+    &--active {
+      display: none;
+    }
+  }
+  &__close-menu-icon {
+    display: none;
+    &--active {
+      display: none;
+    }
+  }
+  &__panel-mobile {
+    padding-inline-start: 0;
+    width: 290px;
+    height: 379px;
+    background-color: #333333;
+    position: absolute;
+    margin: auto;
+    top: 465px; left: 0; bottom: 0; right: 0;
+    display: none;
+    &--active {
+      display: none;
+    }
+  }
+  &__item-mobile {
+    font-size: 26px;
+    border: 1px solid #3B3B3B;
+    transition: $animationStyle;
+    &:hover {
+      &::before {
+        content: "";
+        width: 8px;
+        height: 53px;
+        background: $liteVioletColor;
+        position: absolute;
+        left: 1px;
+        margin-top: 20px;
+      }
+      & > a {
+        color: $liteVioletColor;
+      }
+    }
+    & > a {
+      color: $whiteColor;
+      line-height: 93px;
+      padding-left: 35px;
+      display: block;
+    }
+  }
+  &__item {
+    font-size: 16px;
+    font-weight: bold;
+    @include hover;
+    & > a {
+      display: flex;
+      height: 44px;
+      align-items: center;
+      transition: $animationStyle;
+      color: $liteVioletColor;
+    }
+  }
+  &__list {
+    @include flex-center;
+    margin-left: 25%;
+    width: 500px;
+    justify-content: space-between;
+    padding-inline-start: 0;
+    position: absolute;
+    right: 185px;
+    li:first-child {
+      padding-left: 0;
+    }
+  }
+  &__button {
+    padding: 10px 30px;
+    background: $liteVioletColor;
+    border-radius: 40px;
+    color: $whiteColor;
+    border: 1px solid $liteVioletColor;
+    font-weight: bold;
+    font-size: 16px;
+    transition: $animationStyle;
+    cursor: pointer;
+    @include hover-button;
+  }
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./dist/css/styles.min.css">
+	<title>Forkio step project</title>
+</head>
+<body>
+<div class="wrapper">
+	<header class="header">
+		<nav class="navigation">
+			<div class="navigation__container">
+				<a href="./index.html"><svg class="navigation__logo" width="164" height="42" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_4_240)"><path d="M65.172 15.216v5.136h6.504v2.58h-6.504V30h-3.24V12.648h10.944v2.568h-7.704zm26.738 6.108c0 1.272-.212 2.452-.636 3.54a8.234 8.234 0 01-1.776 2.808 8.168 8.168 0 01-2.772 1.86c-1.08.44-2.28.66-3.6.66-1.312 0-2.508-.22-3.588-.66a8.298 8.298 0 01-2.784-1.86 8.386 8.386 0 01-1.788-2.808c-.424-1.088-.636-2.268-.636-3.54 0-1.272.212-2.448.636-3.528a8.36 8.36 0 011.788-2.82 8.152 8.152 0 012.784-1.848c1.08-.448 2.276-.672 3.588-.672.88 0 1.708.104 2.484.312.776.2 1.488.488 2.136.864.648.368 1.228.82 1.74 1.356.52.528.96 1.12 1.32 1.776.36.656.632 1.368.816 2.136a9.96 9.96 0 01.288 2.424zm-3.3 0c0-.952-.128-1.804-.384-2.556-.256-.76-.62-1.404-1.092-1.932a4.665 4.665 0 00-1.728-1.212c-.672-.28-1.432-.42-2.28-.42-.848 0-1.612.14-2.292.42a4.799 4.799 0 00-1.728 1.212c-.472.528-.836 1.172-1.092 1.932-.256.752-.384 1.604-.384 2.556s.128 1.808.384 2.568c.256.752.62 1.392 1.092 1.92.48.52 1.056.92 1.728 1.2.68.28 1.444.42 2.292.42.848 0 1.608-.14 2.28-.42a4.73 4.73 0 001.728-1.2c.472-.528.836-1.168 1.092-1.92.256-.76.384-1.616.384-2.568zm11.379-.42c.608 0 1.136-.076 1.584-.228.456-.152.828-.36 1.116-.624.296-.272.516-.592.66-.96.144-.368.216-.772.216-1.212 0-.88-.292-1.556-.876-2.028-.576-.472-1.46-.708-2.652-.708h-2.065v5.76h2.017zM108.293 30h-2.916c-.552 0-.952-.216-1.2-.648l-3.648-5.556a1.26 1.26 0 00-.456-.444c-.16-.088-.4-.132-.72-.132h-1.38V30h-3.228V12.648h5.292c1.176 0 2.184.124 3.024.372.848.24 1.54.58 2.076 1.02.544.44.944.968 1.2 1.584.256.608.384 1.28.384 2.016a5.13 5.13 0 01-.264 1.656c-.168.52-.416.992-.744 1.416-.32.424-.72.796-1.2 1.116a5.923 5.923 0 01-1.62.756c.208.12.4.264.576.432.176.16.336.352.48.576L108.293 30zm5.101-10.08h.756c.304 0 .556-.04.756-.12.2-.088.372-.224.516-.408l4.788-6.06c.2-.256.408-.432.624-.528.224-.104.504-.156.84-.156h2.784l-5.844 7.212c-.344.44-.7.752-1.068.936.264.096.5.232.708.408.216.168.42.392.612.672L124.89 30h-2.844c-.384 0-.672-.052-.864-.156a1.417 1.417 0 01-.468-.48l-4.908-6.408a1.286 1.286 0 00-.528-.456c-.2-.088-.488-.132-.864-.132h-1.02V30h-3.228V12.648h3.228v7.272zM129.86 30h-3.24V12.648h3.24V30zm20.433-8.676c0 1.272-.212 2.452-.636 3.54a8.234 8.234 0 01-1.776 2.808 8.168 8.168 0 01-2.772 1.86c-1.08.44-2.28.66-3.6.66-1.312 0-2.508-.22-3.588-.66a8.298 8.298 0 01-2.784-1.86 8.386 8.386 0 01-1.788-2.808c-.424-1.088-.636-2.268-.636-3.54 0-1.272.212-2.448.636-3.528a8.36 8.36 0 011.788-2.82 8.152 8.152 0 012.784-1.848c1.08-.448 2.276-.672 3.588-.672.88 0 1.708.104 2.484.312.776.2 1.488.488 2.136.864.648.368 1.228.82 1.74 1.356.52.528.96 1.12 1.32 1.776.36.656.632 1.368.816 2.136a9.96 9.96 0 01.288 2.424zm-3.3 0c0-.952-.128-1.804-.384-2.556-.256-.76-.62-1.404-1.092-1.932a4.665 4.665 0 00-1.728-1.212c-.672-.28-1.432-.42-2.28-.42-.848 0-1.612.14-2.292.42a4.799 4.799 0 00-1.728 1.212c-.472.528-.836 1.172-1.092 1.932-.256.752-.384 1.604-.384 2.556s.128 1.808.384 2.568c.256.752.62 1.392 1.092 1.92.48.52 1.056.92 1.728 1.2.68.28 1.444.42 2.292.42.848 0 1.608-.14 2.28-.42a4.73 4.73 0 001.728-1.2c.472-.528.836-1.168 1.092-1.92.256-.76.384-1.616.384-2.568z" fill="#8D81AC"/><path d="M9 6.5H6.267a1 1 0 00-1 1v8.707a1 1 0 01-.177.567l-2.676 3.888a1 1 0 00.033 1.18l2.61 3.37a1 1 0 01.21.612V34.5a1 1 0 001 1H9m25-29h2.733a1 1 0 011 1v8.707a1 1 0 00.177.567l2.676 3.888a1 1 0 01-.033 1.18l-2.61 3.37a1 1 0 00-.21.612V34.5a1 1 0 01-1 1H34m-15.672-27l-2.23 24.91a1 1 0 00.996 1.09h7.963a1 1 0 00.998-.941L27.5 9m-9.172-.5l.58-6.482a1 1 0 011.107-.905l7.03.78a1 1 0 01.886 1.066L27.5 9m-9.172-.5L27.5 9" stroke="#8D81AC" stroke-width="3"/><path d="M18.887 39.361l-2.093-3.887a1 1 0 01.88-1.474h6.28c.908 0 1.346 1.114.68 1.733l-4.186 3.887a1 1 0 01-1.561-.259z" fill="#8D81AC" stroke="#8D81AC" stroke-width="3"/></g><defs><clipPath id="clip0_4_240"><path fill="#fff" transform="translate(0 .5)" d="M0 0h164v41H0z"/></clipPath></defs></svg></a>
+				<ul class="navigation__list">
+					<li class="navigation__item"><a href="./index.html">Overview</a></li>
+					<li class="navigation__item"><a href="./index.html">About Fork</a></li>
+					<li class="navigation__item"><a href="./index.html">Buying Options</a></li>
+					<li class="navigation__item"><a href="./index.html">Support</a></li>
+				</ul>
+				<button class="navigation__button">Buy Now</button>
+				<img class="navigation__menu-icon navigation__menu-icon--active"  src="./dist/img/svg/burger-menu.svg" alt="burger-menu">
+				<img class="navigation__close-menu-icon" src="./dist/img/svg/exit-menu.svg" alt="exit-menu">
+				<ul class="navigation__panel-mobile">
+					<li class="navigation__item-mobile"><a href="./index.html">Overview</a></li>
+					<li class="navigation__item-mobile"><a href="./index.html">About Fork</a></li>
+					<li class="navigation__item-mobile"><a href="./index.html">Buying Options</a></li>
+					<li class="navigation__item-mobile"><a href="./index.html">Support</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="header__content">
+				<h1 class="header__title">Fork App</h1>
+				<p class="header__text">A real gamechanger in the world of web development</p>
+				<p class="header__version">v. 2.8 For Mac and Windows</p>
+			</div>
+			<button class="header__button">Download For Free Now</button>
+			<span class="header__period">Unlimited 30-Days Trial Period</span>
+		</div>
+	</header>
+	<main class="page">
+		<section class="description">
+			<div class="container">
+				<div class="description__container">
+					<h2 class="description__title title">
+						Revolutionary editor
+					</h2>
+					<p class="description__text">
+						Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.
+					</p>
+					<div class="description__items">
+						<div class="description__item">
+							<button class="description__item-btn">
+								<img src="./dist/img/svg/eye-svgrepo-com.svg" alt="svgrepo">
+								<span>Watch</span>
+							</button>
+							<p class="description__item-num">1,397</p>
+						</div>
+						<div class="description__item">
+							<button class="description__item-btn">
+								<img src="./dist/img/svg/star.svg" alt="svgrepo">
+								<span>Star</span>
+							</button>
+							<p class="description__item-num">21,038</p>
+						</div>
+						<div class="description__item">
+							<button class="description__item-btn">
+								<img src="./dist/img/svg/git-fork.svg" alt="svgrepo">
+								<span>Fork</span>
+							</button>
+							<p class="description__item-num">4,391</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about">
+			<div class="container">
+				<div class="about__wrapper">
+					<div class="about__items">
+						<div class="about__item">
+							<div class="about__item-img">
+								<img src="./dist/img/about/icon1 1.png" alt="Creatred to Make The Web Better">
+							</div>
+							<div class="about__box">
+								<h3 class="about__box-title">
+									Creatred to Make The Web Better
+								</h3>
+								<p class="about__box-text">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.
+								</p>
+							</div>
+						</div>
+						<div class="about__item">
+							<div class="about__item-img">
+								<img src="./dist/img/about/icon 2.png" alt="Creatred to Make The Web Better">
+							</div>
+							<div class="about__box">
+								<h3 class="about__box-title">
+									Incredibly Powerful Tool
+								</h3>
+								<p class="about__box-text">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.
+								</p>
+							</div>
+						</div>
+						<div class="about__item">
+							<div class="about__item-img">
+								<img src="./dist/img/about/icon2 1.png" alt="Creatred to Make The Web Better">
+							</div>
+							<div class="about__box">
+								<h3 class="about__box-title">
+									Experimental Stuff
+								</h3>
+								<p class="about__box-text">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.
+								</p>
+							</div>
+						</div>
+						<div class="about__item">
+							<div class="about__item-img">
+								<img src="./dist/img/about/icon33 1.png" alt="Creatred to Make The Web Better">
+							</div>
+							<div class="about__box">
+								<h3 class="about__box-title">
+									Creatred to Make The Web Better
+								</h3>
+								<p class="about__box-text">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.
+								</p>
+							</div>
+						</div>
+					</div>
+						<h2 class="about__title title">&lt;Here is what you get&gt;</h2>
+						<div class="about__img">
+							<img src="./dist/img/about/BG-code.png" alt="code-test">
+						</div>
+				</div>
+			</div>
+		</section>
+		<section class="comments">
+			<div class="container">
+				<h2 class="comments__title">People Are Talking About Fork</h2>
+				<div class="comments__content-box">
+					<div class="comments__item">
+						<div class="comments__picture-box">
+							<img src="./dist/img/comments/1.png" alt="1pic">
+						</div>
+						<p class="comments__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </p>
+					</div>
+					<div class="comments__item">
+						<div class="comments__picture-box">
+							<img src="./dist/img/comments/2.png" alt="2pic">
+						</div>
+						<p class="comments__text">Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh. </p>
+					</div>
+					<div class="comments__item">
+						<div class="comments__picture-box">
+							<img src="./dist/img/comments/3.png" alt="3pic">
+						</div>
+						<p class="comments__text">In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula. </p>
+					</div>
+					<div class="comments__item">
+						<div class="comments__picture-box">
+							<img src="./dist/img/comments/4.png" alt="4pic">
+						</div>
+						<p class="comments__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis.  </p>
+					</div>
+					<div class="comments__item">
+						<div class="comments__picture-box">
+							<img src="./dist/img/comments/5.png" alt="5pic">
+						</div>
+						<p class="comments__text">Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla faucibus lorem id arcu consequat faucibus.  </p>
+					</div>
+					<div class="comments__item">
+						<div class="comments__picture-box">
+							<img src="./dist/img/comments/6.png" alt="6pic">
+						</div>
+						<p class="comments__text">Fusce pharetra erat id odio blandit, nec pharetra eros venenatis. Pellentesque porttitor cursus massa et vestibulum. </p>
+					</div>
+				</div>
+				<p class="comments__description-text">Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+			</div>
+		</section>
+		<section class="prices">
+			<div class="container">
+				<div class="prices__container">
+				<h2 class="prices__title title">
+					Fork Subscription Pricing
+				</h2>
+				<div class="cards">
+					<div class="cards__item">
+						<h3 class="cards__title">
+							Students
+						</h3>
+						<div class="cards__box">
+							<p class="cards__price">$<b>29</b></p>
+							<span>per month</span>
+							<p class="cards__info">Personal License</p>
+						</div>
+						<button class="cards__button">
+							purchase
+						</button>
+					</div>
+					<div class="cards__item">
+						<h3 class="cards__title">
+							professional
+						</h3>
+						<div class="cards__box">
+							<p class="cards__price">$<b>59</b></p>
+							<span>per month</span>
+							<p class="cards__info">Professional License Email Support</p>
+						</div>
+						<button class="cards__button">
+							purchase
+						</button>
+					</div>
+					<div class="cards__item cards__item--discount">
+						<h3 class="cards__title">
+							agency
+						</h3>
+						<div class="cards__box">
+							<p class="cards__price">$<b>99</b></p>
+							<span>per month</span>
+							<p class="cards__info">1-12 Team Members Phone Support</p>
+						</div>
+						<button class="cards__button">
+							purchase
+						</button>
+					</div>
+					<div class="cards__item">
+						<h3 class="cards__title">
+							enterprise
+						</h3>
+						<div class="cards__box">
+							<p class="cards__price">$<b>159</b></p>
+							<span>per month</span>
+							<p class="cards__info">Unlimited Team Members 24/ 7 Phone Support</p>
+						</div>
+						<button class="cards__button">
+							purchase
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		</section>
+	</main>
+</div>
+<script src="./dist/js/script.min.js"></script>
+</body>
+</html>

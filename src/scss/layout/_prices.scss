@@ -1,0 +1,130 @@
+.prices {
+	text-align: center;
+	padding: 112px 0 74px;
+	background: url('../img/bg/BG-3.jpg') center / no-repeat / cover;
+	&__title {
+		color: $whiteColor;
+		margin: 0 0 61px 0;
+	}
+	&__container{
+		max-width: 1135px;
+		margin: 0 auto;
+	}
+}
+.cards {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: space-between;
+	gap:30px 15px;
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 257px;
+		height: 457px;
+		color: $whiteColor;
+		background-color: rgba(255, 255, 255, 7%);
+			&:first-child{
+				.cards__title{
+					padding-bottom: 20px;
+				}
+			}
+	}
+
+	&__title {
+		width: 100%;
+		font-size: 24px;
+		line-height: 24px;
+		text-transform: uppercase;
+		font-weight: 400;
+		flex: 1 1 auto;
+		padding: 36px 0;
+		background-color: rgba(255, 255, 255, 11%);
+		margin: 0;
+	}
+
+	&__box {
+		flex: 1 1 auto;
+		font-size: 16px;
+		width: 211px;
+		line-height: 18px;
+		margin: 20px 0 0 0;
+		& span {
+			display: block;
+			font-size: 14px;
+			line-height: 16px;
+			position: relative;
+			text-transform: uppercase;
+			padding: 0 0 38px 0;
+			&::after{
+				content: "";
+				display: block;
+				width: 60px;
+				height: 5px;
+				left: 50%;
+				bottom: 0;
+				position: absolute;
+				transform: translate(-50%, 0);
+				background: $liteVioletColor;
+			}
+		}
+	}
+
+	&__price {
+		font-size: 60px;
+		line-height: 90px;
+		text-transform: uppercase;
+		margin: 0;
+	}
+	&__info {
+		margin: 36px 0 38px 0;
+	}
+	&__button {
+		background-color: rgba(255, 255, 255, 15%);
+		border-radius: 50px;
+		line-height: 15px;
+		font-size: 15px;
+		color: $whiteColor;
+		text-transform: uppercase;
+		padding: 13.5px 36px;
+		margin: 0 0 37px 0;
+		cursor: pointer;
+		border: 0;
+	}
+}
+.cards__item--discount{
+	width: 299px;
+	height: 560px;
+	background-color: rgba(70,48,72, 70%);
+	.cards {
+		&__title {
+			background-color: rgba(70,48,72, 84%);
+		}
+		&__box {
+			margin-top: 14px;
+			& span{
+				padding-bottom: 52px;
+			}
+		}
+		&__price {
+			font-size: 82px;
+		line-height: 90px;
+		margin-bottom:16px;
+		}
+		&__info {
+			margin: 42px 0 83px 0;
+		}
+		&__button {
+			padding: 18.5px 48px;
+			font-size: 16px;
+			line-height: 18px;
+			margin: 0 0 47px 0 ;
+		}
+	}
+}
+
+
+
+

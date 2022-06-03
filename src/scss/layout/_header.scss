@@ -1,0 +1,66 @@
+.header {
+  background: url("../img/bg/BG-1.jpg") no-repeat center / cover;
+  @include flex-center;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 75px;
+  &__title {
+    font-weight: bold;
+    font-size: 82px;
+    line-height: 93px;
+    color: $whiteColor;
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-bottom: 15px;
+    display: inline;
+  }
+  &__content {
+    @include flex-center;
+    flex-direction: column;
+    padding-bottom: 450px;
+  }
+  &__text {
+    font-size: 30px;
+    line-height: 30px;
+    color: $liteVioletColor;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+  &__version {
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $liteBlueColor;
+  }
+  &__button {
+    padding: 20px 50px;
+    background: $liteVioletColor;
+    border-radius: 40px;
+    color: $whiteColor;
+    font-weight: bold;
+    font-size: 21px;
+    width: 390px;
+    position: absolute;
+    transition: $animationStyle;
+    left: 50%;
+    bottom: -41px;
+    transform: translateX(-50%);
+    border: 1px solid $liteVioletColor;
+    margin-bottom: 10px;
+    cursor: pointer;
+    @include hover-button;
+  }
+  &__period {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    bottom: -69px;
+    transform: translateX(-50%);
+  }
+}
