@@ -9,10 +9,6 @@ List of technologies:
 6. SASS
 7. Adaptive development
 
-Members: 
-1. Vladyslav Panchenko - Header 
-2. Vladyslav Onischenko - Main block
-
 
 
 
